@@ -28,7 +28,7 @@ $font-family-1: 'Raleway', sans-serif;
 }
 @mixin box1 {
     margin-right: 40px;
-    height: 680px;
+    height: 600px;
     background-color: #F6F7F7;
     border: solid 1px gray;
     display: flex;
@@ -80,7 +80,7 @@ $font-family-1: 'Raleway', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 130px;
+  margin-top: 60px;
 }
 
 body {
@@ -171,19 +171,34 @@ section:nth-of-type(1) {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                height: 500px;
+                height: 450px;
 
-                .armchairs {
-                    margin-top: 70px;
-                    height: 450px;
+                .slider {
+                    margin-top: 50px;
+                    height: 400px;
                     width: 450px;
-                    background-image: url('../images/black_chair.png');
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                    //border: 1px solid black;
+                    list-style: none;
+                    li{
+                      display: none;
+                    }
+                    .visib{
+                      display: inline-block;
+                    }
                 }
 
-                .arrows {
+                #previous{
+                    width: 20px;
+                    height: 500px;
+                    display: flex;
+                    align-items: center;
+                    color: #0ac294;
+                    font-size: 80px;
+                    font-family: serif;
+                    font-weight: bold;
+                    margin-right: 80px;
+                }
+                #next{
                     width: 20px;
                     height: 500px;
                     display: flex;
@@ -250,7 +265,7 @@ section:nth-of-type(2) {
                     margin-top: 30px;
                     height: 290px;
 
-                    &:first-child {
+                    &:first-child{
                         background-image: url("../images/box1_img.jpg");
                         background-position: center;
                         background-size: cover;
@@ -327,7 +342,7 @@ section:nth-of-type(3) {
     width: 100vw;
 
         .line-3 {
-            height: 880px;
+            height: 780px;
             width: 100%;
 
             .box-title {
@@ -390,7 +405,7 @@ section:nth-of-type(3) {
 
                     &:nth-child(2) {
                         margin-right: 40px;
-                        height: 680px;
+                        height: 600px;
                         background-color: #0ac294;
                         display: flex;
                         justify-content: center;
@@ -532,13 +547,18 @@ section:nth-of-type(4) {
               }
               .form-container {
                 height: 600px;
+                form{
+                  height: 460px;
               //  border: solid gray 1px;
-                textarea .form-line {
-                  height: 130px;
-                  resize: vertical;
-                  line-height: 150%;
+                textarea {
+                  height: 180px;
+                  resize: none;
+                  width:100%;
+
+                  //line-height: 150%;
 
                 }
+              }
                 .form-line{
                   width: 100%;
                   height: 60px;
