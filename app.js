@@ -57,3 +57,21 @@ var stripes = Array.from(document.getElementsByClassName("bright-stripe"));
    document.querySelector(".line-2 .col-4:nth-child(2)").addEventListener("mouseout", function(mouseOut) {
        stripes[1].style.display = "block";
    });
+
+
+
+
+var contact= document.querySelector('.upper-menu li');
+var sublist= Array.from(document.querySelectorAll('.sublist'));
+
+contact.addEventListener('mouseover', function(event){
+
+    sublist[0].style.display= "block";
+
+ });
+
+ contact.addEventListener('mouseout', function(event){
+
+    sublist[0].style.display= "none";
+
+ });
